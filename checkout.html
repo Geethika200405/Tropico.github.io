@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tropico</title>
+<!-- Meta Description-->
+<meta name="description" content="Tropico - Fresh produce, creamy dairy, and cosmetics. Your one-stop shop for quality essentials, where freshness meets convenience!">
+<!-- Preconnect to required origins -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+<!-- Font Awesome CDN Link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="./checkout.css" type="text/css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700&display=swap" rel="stylesheet">
+<!-- Favicon-->
+<link rel="icon" href="./img/Tropico_resized.webp" type="image/png">
+</head>
+<body>
+<!-- Header Section-->
+<header class="header">
+    <!-- Logo-->
+    <a href="./index.html" class="logo">
+        <img src="./img/Tropico_resized.webp" alt="Tropico logo" width="80" height="80">
+    </a>
+    <!-- Navigation-->
+    <nav class="menu">
+        <a href="home.html" class="active">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="./index.html">Order</a>
+        <a href="loyalty.html">Loyalty Registration</a>
+    </nav>
+    <section class="menu-container">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <i class="fa-solid fa-bars" aria-label="Toggle Menu"></i>
+        </label>
+        <nav class="side-menu">
+            <a href="home.html" class="active">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="./index.html">Order</a>
+            <a href="loyalty.html">Loyalty Registration</a>
+        </nav>
+    </section>
+    <!-- Search Bar-->
+    <section class="search-bar">
+        <input type="text" placeholder="Search Tropico..." aria-label="Search Tropico">
+        <button type="button" aria-label="Search">Search</button>
+    </section>
+</header>
+<!-- Main content-->
+<main>
+    <!-- Banner Section-->
+    <section class="home" id="home">
+        <section class="content">
+            <h3>Fresh and <span>Organic</span> Products to You</h3>
+            <p>Fresh produce, creamy dairy, and cosmetics - your one-stop shop for quality essentials, where freshness meets convenience!</p>
+            <a href="products.html" class="btn" aria-label="Shop Now">Shop Now</a>
+            <section class="search-tags">
+                <a href="vegetable.html">#vegetables</a>
+                <a href="cosmetics.html">#cosmetics</a>
+                <a href="dairy.html">#dairy</a>
+            </section>
+        </section>
+    </section>
+    <!-- Checkout Section-->
+    <div class="checkout">
+        <form id="checkout-form">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="inputBox">
+                        <label for="full-name">Full Name :</label>
+                        <input id="full-name" type="text" placeholder="Geethika Jayaweera" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email :</label>
+                        <input id="email" type="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="address">Address :</label>
+                        <input id="address" type="text" placeholder="1234 Main St" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="city">City :</label>
+                        <input id="city" type="text" placeholder="Kandy" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="state">Province :</label>
+                            <input id="state" type="text" placeholder="Central Province" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="zip-code">Zip Code :</label>
+                            <input id="zip-code" type="text" placeholder="20500" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="inputBox">
+                        <span>Cards Accepted :</span>
+                        <img src="./img/card_img.webp" alt="Accepted Cards">
+                    </div>
+                    <div class="inputBox">
+                        <label for="name-on-card">Name on Card :</label>
+                        <input id="name-on-card" type="text" placeholder="Mr. Geethika Jayaweera" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="card-number">Credit Card Number :</label>
+                        <input id="card-number" type="text" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="exp-month">Exp Month :</label>
+                        <input id="exp-month" type="text" placeholder="January" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="exp-year">Exp Year :</label>
+                            <input id="exp-year" type="text" placeholder="2024" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cvv">CVV :</label>
+                            <input id="cvv" type="text" placeholder="1234" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="order-summary" class="form-group">
+                <h2>Order Summary</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity/Weight</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-items">
+                        <!-- Example row -->
+                        <tr>
+                            <td class="item">
+                                <img src="" alt="sample item img">
+                            </td>
+                            <td class="quantity"></td>
+                            <td class="price"></td>
+                        </tr>
+                        <!-- More order items will be dynamically added here -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total Price:</td>
+                            <td id="total-price">Rs. 0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <input type="submit" value="Proceed to Checkout" class="submit-btn" aria-label="Proceed to Checkout">
+        </form>
+    </div>
+</main>
+<!-- Footer-->
+<section class="footer">
+    <section class="footer-container">
+        <section class="box">
+            <h4><a href="#" class="logo"><img src="./img/Tropico_resized.webp" alt="Tropico logo"></a>Tropico</h4>
+            <p>Fresh, quality groceries delivered to your doorstep with ultimate convenience.</p>
+            <section class="share">
+                <a href="#" class="fa-brands fa-facebook" aria-label="Facebook"></a>
+                <a href="#" class="fa-brands fa-twitter" aria-label="Twitter"></a>
+                <a href="#" class="fa-brands fa-instagram" aria-label="Instagram"></a>
+                <a href="#" class="fa-brands fa-linkedin" aria-label="LinkedIn"></a>
+            </section>
+        </section>
+        <section class="box">
+            <h3>Contact Info</h3>
+            <a href="tel:+1234567890" class="links"><i class="fa-solid fa-phone"></i>+123-456-7890</a>
+            <a href="tel:+1112223333" class="links"><i class="fa-solid fa-phone"></i>+111-222-3333</a>
+            <a href="mailto:tropico@gmail.com" class="links"><i class="fa-solid fa-envelope"></i>tropico@gmail.com</a>
+            <a href="#" class="links"><i class="fa-solid fa-location-dot"></i>Kandy, Sri Lanka - 400104</a>
+        </section>
+        <section class="box">
+            <h3>Quick Links</h3>
+            <a href="home.html" class="links"><i class="fa-solid fa-arrow-right"></i>Home</a>
+            <a href="about-us.html" class="links"><i class="fa-solid fa-arrow-right"></i>About Us</a>
+            <a href="products.html" class="links"><i class="fa-solid fa-arrow-right"></i>Products</a>
+            <a href="./index.html" class="links"><i class="fa-solid fa-arrow-right"></i>Order</a>
+            <a href="loyalty.html" class="links"><i class="fa-solid fa-arrow-right"></i>Loyalty Registration</a>
+        </section>
+        <section class="box">
+            <h3>Newsletter</h3>
+            <p>Subscribe for latest updates</p>
+            <input type="email" placeholder="Your email" class="email" aria-label="Email">
+            <input type="submit" value="Subscribe" class="btn">
+            <img src="./img/payment-img.webp" class="payment-img" alt="Payment Methods">
+        </section>
+    </section>
+    <section class="footer-bottom">
+        <p class="rights">&copy; 2024 Your Company. All rights reserved.<br><br>Created by Geethika Jayaweera.</p>
+    </section>
+</section>
+<script src="./checkout.js"></script>
+</body>
+</html>
